@@ -48,7 +48,8 @@ const InfoSection: React.FC = () => {
                     </div>
                     <div>
                         <h4 className="font-bold text-lg text-gray-900">Local</h4>
-                        <p className="text-gray-600 text-sm leading-tight mb-2">{EVENT_DATA.location}</p>
+                        <p className="text-gray-800 font-medium">{EVENT_DATA.location}</p>
+                        <p className="text-gray-500 text-sm leading-snug mb-2 max-w-xs">{EVENT_DATA.fullAddress}</p>
                         <a 
                             href={EVENT_DATA.locationUrl} 
                             target="_blank" 

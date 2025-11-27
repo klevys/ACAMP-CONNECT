@@ -3,7 +3,7 @@ import Hero from './components/Hero';
 import InfoSection from './components/InfoSection';
 import PricingCard from './components/PricingCard';
 import { WhatsappIcon } from './components/Icons';
-import { EVENT_DATA, THEME_COLORS } from './constants';
+import { EVENT_DATA } from './constants';
 
 function App() {
   return (
@@ -43,9 +43,13 @@ function App() {
             <WhatsappIcon size={24} />
             <span>Falar com Organizador</span>
           </a>
+          
+          <p className="text-gray-400 text-sm mb-8">
+            WhatsApp: {EVENT_DATA.contactDisplay}
+          </p>
 
           <div className="border-t border-gray-700 pt-8 text-gray-400 text-sm">
-            <p>&copy; 2026 CRESCER Igreja Batista. Todos os direitos reservados.</p>
+            <p>&copy; 2026 Sibapa. Todos os direitos reservados.</p>
             <p className="mt-2">Palmas, TO</p>
           </div>
         </div>
